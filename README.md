@@ -8,7 +8,7 @@ The first version of this document was written by
 * made platform for cafeteria
 
 ## **etc.**
-* 디비 : RDS? 상현님 의견 
+* 디비 : edgeDB
 * backend : python-flask
 * frontend : react native? 
 
