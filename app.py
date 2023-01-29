@@ -4,7 +4,7 @@ import os.path
 import requests
 
 
-#from api.v1 import api_v1
+#from api.v1 import api_v1 
 from flask import Flask
 from flask import render_template, jsonify, request, Blueprint
 
@@ -22,7 +22,10 @@ app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
-    return render_template("index.html")
+    #name = request.form.get('홍길동')
+    names = '홍길동'
+    return render_template("index.html",name = names)
+
 
 
 if __name__ == "__main__":
